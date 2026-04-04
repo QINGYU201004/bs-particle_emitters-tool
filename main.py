@@ -10,6 +10,7 @@ try:
     import add
     import search
     import sc_extract
+    import csv_name_extract
     from language import LANG_DATA
 except ImportError as e:
     print(f"Error: Module import failed: {e}")
@@ -73,6 +74,8 @@ def show_menu():
     clear_screen()
     L = LANG_DATA[current_lang]
 
+    divider = "=" * width
+
     print("=" * width)
     print(L["title"].center(width))
     print("=" * width)
@@ -80,10 +83,12 @@ def show_menu():
     print(L["opt2"])
     print(L["opt3"])
     print(L["opt4"])
-    print(L["opt5"])
     print(L["opt6"])
+    print(L["opt7"])
+    print(divider)
+    print(L["opt5"])
     print(L["opt0"])
-    print("=" * width)
+    print(divider)
 
 
 def switch_lang():
@@ -148,6 +153,17 @@ def do_extract_sc(L):
     sc_extract.extract_movieclip_sc_names(in_f, out_f or None)
 
 
+def do_extract_csv_names(L):
+    csv_label = L.get("csv_src_file", "CSV file")
+    json_label = L.get("name_json_src_file", "JSON file")
+    out_label = L.get("name_json_out_file", "Output file")
+
+    csv_path = input(f"{csv_label} (effects.csv): ").strip() or "effects.csv"
+    json_path = input(f"{json_label} (particle_emitters_old.json): ").strip() or "particle_emitters_old.json"
+    out_path = input(f"{out_label} (auto): ").strip()
+    csv_name_extract.extract_particle_emitter_names(csv_path, json_path, out_path or None)
+
+
 def run_action(choice, L):
     actions = {
         '1': do_fix_json,
@@ -156,6 +172,7 @@ def run_action(choice, L):
         '4': do_merge,
         '5': lambda _L: switch_lang(),
         '6': do_extract_sc,
+        '7': do_extract_csv_names,
     }
 
     if choice == '0':

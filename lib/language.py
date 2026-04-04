@@ -9,6 +9,7 @@ LANG_DATA = {
         "opt4": "[4] Physical Merge/Append JSON (add.py)",
         "opt5": "[5] Switch Language",
         "opt6": "[6] Extract movieclip.swf SC names (sc_extract.py)",
+        "opt7": "[7] Extract ParticleEmitterName matches from CSV (csv_name_extract.py)",
         "opt0": "[0] Exit",
         "input_choice": "Enter choice: ",
         "press_enter": "Press Enter to continue...",
@@ -28,6 +29,9 @@ LANG_DATA = {
         "patch_file": "Patch file",
         "sc_src_file": "Source file",
         "sc_out_file": "Output file",
+        "csv_src_file": "CSV file",
+        "name_json_src_file": "JSON file",
+        "name_json_out_file": "Output file",
     },
     "zh": {
         "title": "粒子特效处理综合工具",
@@ -37,6 +41,7 @@ LANG_DATA = {
         "opt4": "[4] 物理合并拼接 JSON (add.py)",
         "opt5": "[5] 切换语言",
         "opt6": "[6] 提取 movieclip.swf 的 SC 名 (sc_extract.py)",
+        "opt7": "[7] 从 CSV 提取 ParticleEmitterName 并导出键值 JSON (csv_name_extract.py)",
         "opt0": "[0] 退出",
         "input_choice": "请输入编号: ",
         "press_enter": "按回车键继续...",
@@ -56,6 +61,9 @@ LANG_DATA = {
         "patch_file": "补丁文件",
         "sc_src_file": "提取输入文件",
         "sc_out_file": "提取输出文件",
+        "csv_src_file": "CSV 文件",
+        "name_json_src_file": "搜索 JSON 文件",
+        "name_json_out_file": "导出 JSON 文件",
     },
     "ru": {
         "title": "Инструментарий для эффектов",
@@ -65,6 +73,7 @@ LANG_DATA = {
         "opt4": "[4] Физическое слияние JSON (add.py)",
         "opt5": "[5] Переключить язык",
         "opt6": "[6] Извлечь SC имена из movieclip.swf (sc_extract.py)",
+        "opt7": "[7] Извлечь совпадения ParticleEmitterName из CSV (csv_name_extract.py)",
         "opt0": "[0] Выход",
         "input_choice": "Введите номер: ",
         "press_enter": "Нажмите Enter для продолжения...",
@@ -84,5 +93,8 @@ LANG_DATA = {
         "patch_file": "Файл патча",
         "sc_src_file": "Исходный файл",
         "sc_out_file": "Выходной файл",
+        "csv_src_file": "CSV файл",
+        "name_json_src_file": "JSON файл",
+        "name_json_out_file": "Выходной JSON",
     }
 }

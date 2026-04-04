@@ -8,6 +8,7 @@ A command-line toolkit for processing `particle_emitters` JSON files.
 - Convert newer particle emitter format to older compatible format.
 - Search effects by emitter key and `movieclip` (`swf` / `name`) keywords.
 - Extract unique SC names from `movieclip.swf` and export them as a CSV file with a header row.
+- Read `ParticleEmitterName` values from a CSV file and export matched full key/value entries from `particle_emitters_old.json`.
 - Safely merge one JSON file into another while skipping duplicate keys.
 - Multi-language menu: English, Chinese, Russian.
 
@@ -29,6 +30,7 @@ Then choose an action from the menu:
 - `4`: Physical merge/append JSON (`add.py`)
 - `5`: Switch language
 - `6`: Extract SC names from `movieclip.swf` (`sc_extract.py`)
+- `7`: Extract `ParticleEmitterName` matches from CSV into `_name.json` (`csv_name_extract.py`)
 
 ## Project Structure
 
@@ -40,6 +42,7 @@ Then choose an action from the menu:
     ├── fix.py
     ├── language.py
     ├── old.py
+    ├── csv_name_extract.py
     ├── sc_extract.py
     └── search.py
 ```
