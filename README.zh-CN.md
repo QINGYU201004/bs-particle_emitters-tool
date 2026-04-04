@@ -7,6 +7,7 @@
 - 修复宽松/非标准 JSON 格式，并输出排序后的美化 JSON。
 - 将新版粒子发射器格式转换为旧版兼容格式。
 - 按特效键名与 `movieclip`（`swf` / `name`）关键词进行搜索提取。
+- 从 `movieclip.swf` 提取唯一 SC 名，并导出为带表头的 CSV 文件。
 - 安全合并 JSON，自动跳过重复键，减少冲突风险。
 - 菜单支持多语言：英语、中文、俄语。
 
@@ -27,6 +28,7 @@ python3 main.py
 - `3`：搜索/提取特效（`search.py`）
 - `4`：物理合并 JSON（`add.py`）
 - `5`：切换语言
+- `6`：提取 `movieclip.swf` 的 SC 名（`sc_extract.py`）
 
 ## 项目结构
 
@@ -38,6 +40,7 @@ python3 main.py
     ├── fix.py
     ├── language.py
     ├── old.py
+    ├── sc_extract.py
     └── search.py
 ```
 

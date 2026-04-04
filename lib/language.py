@@ -8,6 +8,7 @@ LANG_DATA = {
         "opt3": "[3] Search Keys and SWF/SC references (search.py)",
         "opt4": "[4] Physical Merge/Append JSON (add.py)",
         "opt5": "[5] Switch Language",
+        "opt6": "[6] Extract movieclip.swf SC names (sc_extract.py)",
         "opt0": "[0] Exit",
         "input_choice": "Enter choice: ",
         "press_enter": "Press Enter to continue...",
@@ -25,6 +26,8 @@ LANG_DATA = {
         "swf_keyword": "SC/SWF keyword",
         "base_file": "Base file",
         "patch_file": "Patch file",
+        "sc_src_file": "Source file",
+        "sc_out_file": "Output file",
     },
     "zh": {
         "title": "粒子特效处理综合工具",
@@ -33,6 +36,7 @@ LANG_DATA = {
         "opt3": "[3] 搜索键值和 SWF 键的 SC 文件引用 (search.py)",
         "opt4": "[4] 物理合并拼接 JSON (add.py)",
         "opt5": "[5] 切换语言",
+        "opt6": "[6] 提取 movieclip.swf 的 SC 名 (sc_extract.py)",
         "opt0": "[0] 退出",
         "input_choice": "请输入编号: ",
         "press_enter": "按回车键继续...",
@@ -50,6 +54,8 @@ LANG_DATA = {
         "swf_keyword": "SC/SWF 关键词",
         "base_file": "基础文件",
         "patch_file": "补丁文件",
+        "sc_src_file": "提取输入文件",
+        "sc_out_file": "提取输出文件",
     },
     "ru": {
         "title": "Инструментарий для эффектов",
@@ -58,6 +64,7 @@ LANG_DATA = {
         "opt3": "[3] Поиск ключей и ссылок на SC файлы (search.py)",
         "opt4": "[4] Физическое слияние JSON (add.py)",
         "opt5": "[5] Переключить язык",
+        "opt6": "[6] Извлечь SC имена из movieclip.swf (sc_extract.py)",
         "opt0": "[0] Выход",
         "input_choice": "Введите номер: ",
         "press_enter": "Нажмите Enter для продолжения...",
@@ -75,5 +82,7 @@ LANG_DATA = {
         "swf_keyword": "Ключевое слово SC/SWF",
         "base_file": "Базовый файл",
         "patch_file": "Файл патча",
+        "sc_src_file": "Исходный файл",
+        "sc_out_file": "Выходной файл",
     }
 }

@@ -9,6 +9,7 @@ try:
     import old
     import add
     import search
+    import sc_extract
     from language import LANG_DATA
 except ImportError as e:
     print(f"Error: Module import failed: {e}")
@@ -80,6 +81,7 @@ def show_menu():
     print(L["opt3"])
     print(L["opt4"])
     print(L["opt5"])
+    print(L["opt6"])
     print(L["opt0"])
     print("=" * width)
 
@@ -137,6 +139,15 @@ def do_merge(L):
         add.physical_merge_safe(base, patch, out)
 
 
+def do_extract_sc(L):
+    src_label = L.get("sc_src_file", "Source file")
+    out_label = L.get("sc_out_file", "Output file")
+
+    in_f = input(f"{src_label} (particle_emitters_old.json): ").strip() or "particle_emitters_old.json"
+    out_f = input(f"{out_label} (auto): ").strip()
+    sc_extract.extract_movieclip_sc_names(in_f, out_f or None)
+
+
 def run_action(choice, L):
     actions = {
         '1': do_fix_json,
@@ -144,6 +155,7 @@ def run_action(choice, L):
         '3': do_search,
         '4': do_merge,
         '5': lambda _L: switch_lang(),
+        '6': do_extract_sc,
     }
 
     if choice == '0':
